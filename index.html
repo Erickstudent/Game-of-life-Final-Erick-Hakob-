@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="script.js"></script>
+    <style type ="text/css">
+        button{
+            padding:5px;
+            margin:3px;
+            font-size: 20px;
+        }
+        .vertical {
+            border-left: 6px solid black;
+            height: 98%;
+            position: absolute;
+            left: 3600px;
+        }
+    </style>
+
+
+</head>
+
+<body style = "font-family: sans-serif;">
+    <h1>Game of Life <img src="https://leafphp.dev/logo-circle.png" class="img-thumbnail" alt="leaf" width="30" height="30"></h1>
+        <div style = "float: right; font-size: 24 px">
+        <div class = "vertical"></div>
+            
+        <h1>Events & Statistics</h1>
+            
+        <h2>Events</h2>
+            <button type="button" onclick="Stopforever()" class="btn btn-primary btn-lg">Stop Forever </button>
+            <button type="button" onclick="killerWave()" class="btn btn-primary btn-lg">Kill all</button>
+
+            <h2>Statistics</h2> 
+            <b>Grass:</b><p id="grassValue"></p>
+            <b>GrassEaters:</b><p id="grassEaterValue"></p>
+            <b>Predators:</b> <p id="predatorValue"></p>
+            <b>EverythingEaters:</b><p id="everythingEaterValue"></p>
+            <b>Hunters:</b><p id="hunterValue"></p>
+            <b>Viruses:</b> <p id="virusValue"></p>
+</div>
+</body>
+
+</html>
